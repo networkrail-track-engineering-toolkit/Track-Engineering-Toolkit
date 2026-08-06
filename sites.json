@@ -102,5 +102,21 @@
     "icon": "📁",
     "color": "#ef4444",
     "note": "Placeholder"
+  },
+  {
+    "title": "AIVR",
+    "url": "https://view.aivr.video/login",
+    "description": "AIVR",
+    "icon": "📁",
+    "color": "#ef4444",
+    "note": "AIVR"
+  },
+  {
+    "title": "Intel AIVR",
+    "url": "https://intel.aivr.video/dashboard",
+    "description": "Intel AIVR",
+    "icon": "📁",
+    "color": "#ef4444",
+    "note": "AIVR"
   }
 ]
