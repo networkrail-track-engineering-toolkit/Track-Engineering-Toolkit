@@ -72,7 +72,31 @@
     "note": "Website"
   },
   {
+    "title": "EC Track WSF",
+    "url": "https://app.powerbi.com/groups/488d0fc8-a7b4-410a-b041-aa3e806dd89d/reports/1e62d3aa-089a-41c1-bbfb-c7334bf3db42/81e003fac7e91482c392?experience=power-bi",
+    "description": "Wrong Side Failures",
+    "icon": "📁",
+    "color": "#ef4444",
+    "note": "PowerBI"
+  },
+  {
+    "title": "Weak Embankment",
+    "url": "https://app.powerbi.com/groups/me/reports/0626162e-8fbd-461f-a426-dc84e05f7a1f/ReportSection?ctid=c22cc3e1-5d7f-4f4d-be03-d5a158cc9409&experience=power-bi",
+    "description": "Weak Embankment SMD & TQ",
+    "icon": "📁",
+    "color": "#ef4444",
+    "note": "PowerBI"
+  },
+  {
     "title": "Placeholder 10",
+    "url": "#",
+    "description": "Replace this with your app link",
+    "icon": "📁",
+    "color": "#ef4444",
+    "note": "Placeholder"
+  },
+  {
+    "title": "Placeholder",
     "url": "#",
     "description": "Replace this with your app link",
     "icon": "📁",
