@@ -13,7 +13,6 @@ function getSystemPrefersLight() {
 }
 
 function applyTheme(theme) {
-  // theme: 'light' | 'dark' | 'system'
   const html = document.documentElement;
   if (theme === 'light') {
     html.setAttribute('data-theme', 'light');
@@ -24,7 +23,6 @@ function applyTheme(theme) {
     themeToggle.setAttribute('aria-pressed', 'false');
     themeIcon.textContent = '🌙';
   } else {
-    // system
     if (getSystemPrefersLight()) {
       html.setAttribute('data-theme', 'light');
       themeToggle.setAttribute('aria-pressed', 'true');
@@ -42,11 +40,9 @@ function initTheme() {
   if (stored === 'light' || stored === 'dark' || stored === 'system') {
     applyTheme(stored);
   } else {
-    // default to system
     applyTheme('system');
   }
 
-  // update when system preference changes
   if (window.matchMedia) {
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
       const storedNow = localStorage.getItem(THEME_KEY) || 'system';
@@ -54,13 +50,26 @@ function initTheme() {
     });
   }
 
-  // Toggle cycles: system -> light -> dark -> system ...
   themeToggle.addEventListener('click', () => {
     const cur = localStorage.getItem(THEME_KEY) || 'system';
     const next = cur === 'system' ? 'light' : cur === 'light' ? 'dark' : 'system';
     localStorage.setItem(THEME_KEY, next);
     applyTheme(next);
   });
+}
+
+// --- URL helpers ---
+function normalizeUrl(u) {
+  if (!u) return '#';
+  const trimmed = u.trim();
+  // preserve fragment or root-relative paths
+  if (trimmed.startsWith('#') || trimmed.startsWith('/')) return trimmed;
+  // protocol-relative
+  if (trimmed.startsWith('//')) return 'https:' + trimmed;
+  // already has scheme
+  if (/^[a-zA-Z][a-zA-Z0-9+.-]*:\/\//.test(trimmed)) return trimmed;
+  // otherwise assume https
+  return 'https://' + trimmed;
 }
 
 // --- SITES LOADER ---
@@ -73,7 +82,6 @@ async function loadSites() {
     return data;
   } catch (err) {
     console.warn('Could not load sites.json, using fallback placeholders.', err);
-    // Fallback defaults
     return [
       { title: "Placeholder 1", url: "#", description: "Replace this with your app link", icon: "🔧", color: "#0ea5a4" },
       { title: "Placeholder 2", url: "#", description: "Replace this with your app link", icon: "🧭", color: "#60a5fa" },
@@ -96,14 +104,10 @@ function safeText(str) {
 }
 
 function createCard(site, query) {
+  const siteUrl = normalizeUrl(site.url || '#');
+
   const card = document.createElement('article');
   card.className = 'card';
-
-  const link = document.createElement('a');
-  link.href = site.url || '#';
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  link.setAttribute('aria-label', `${site.title} — Open in new tab`);
 
   const top = document.createElement('div');
   top.className = 'top';
@@ -115,14 +119,25 @@ function createCard(site, query) {
   icon.setAttribute('aria-hidden', 'true');
 
   const titleWrap = document.createElement('div');
+
+  const titleAnchor = document.createElement('a');
+  titleAnchor.className = 'title-link';
+  titleAnchor.href = siteUrl;
+  titleAnchor.target = '_blank';
+  titleAnchor.rel = 'noopener noreferrer';
+  titleAnchor.setAttribute('aria-label', `${site.title} — Open in new tab`);
+
   const title = document.createElement('div');
   title.className = 'title';
   title.textContent = site.title || 'Untitled';
+
+  titleAnchor.appendChild(title);
+
   const desc = document.createElement('div');
   desc.className = 'desc';
   desc.textContent = site.description || '';
 
-  titleWrap.appendChild(title);
+  titleWrap.appendChild(titleAnchor);
   titleWrap.appendChild(desc);
 
   top.appendChild(icon);
@@ -131,29 +146,17 @@ function createCard(site, query) {
   const meta = document.createElement('div');
   meta.className = 'meta';
 
-  const host = document.createElement('div');
-  host.className = 'host';
-  try {
-    const u = new URL(site.url);
-    host.textContent = u.hostname;
-  } catch (e) {
-    host.textContent = '';
-  }
-
   const btn = document.createElement('a');
   btn.className = 'open-btn';
   btn.textContent = 'Open';
-  btn.href = site.url || '#';
+  btn.href = siteUrl;
   btn.target = '_blank';
   btn.rel = 'noopener noreferrer';
 
-  meta.appendChild(host);
   meta.appendChild(btn);
 
-  link.appendChild(top);
-  link.appendChild(meta);
-
-  card.appendChild(link);
+  card.appendChild(top);
+  card.appendChild(meta);
 
   // Highlight query in title / description if provided (simple, safe)
   if (query) {
@@ -163,7 +166,6 @@ function createCard(site, query) {
         const esc = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         const re = new RegExp(esc, 'ig');
 
-        // Use innerHTML only on constrained content after escaping
         title.innerHTML = safeText(site.title).replace(re, (m) => `<mark>${safeText(m)}</mark>`);
         desc.innerHTML = safeText(site.description).replace(re, (m) => `<mark>${safeText(m)}</mark>`);
       }
@@ -196,13 +198,12 @@ function filterSites(sites, q) {
     const u = (s.url || '').toLowerCase();
     let hostname = '';
     try {
-      hostname = new URL(s.url).hostname.toLowerCase();
+      hostname = new URL(normalizeUrl(s.url || '')).hostname.toLowerCase();
     } catch (e) { hostname = ''; }
     return t.includes(low) || d.includes(low) || u.includes(low) || hostname.includes(low);
   });
 }
 
-// simple debounce
 function debounce(fn, wait = 150) {
   let t;
   return function (...args) {
