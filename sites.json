@@ -1,0 +1,12 @@
+[
+  { "title": "Placeholder 1", "url": "#", "description": "Replace this with your app link", "icon": "🔧", "color": "#0ea5a4" },
+  { "title": "Placeholder 2", "url": "#", "description": "Replace this with your app link", "icon": "🧭", "color": "#60a5fa" },
+  { "title": "Placeholder 3", "url": "#", "description": "Replace this with your app link", "icon": "⚙️", "color": "#f59e0b" },
+  { "title": "Placeholder 4", "url": "#", "description": "Replace this with your app link", "icon": "📊", "color": "#ef4444" },
+  { "title": "Placeholder 5", "url": "#", "description": "Replace this with your app link", "icon": "🗂️", "color": "#7c3aed" },
+  { "title": "Placeholder 6", "url": "#", "description": "Replace this with your app link", "icon": "🧪", "color": "#14b8a6" },
+  { "title": "Placeholder 7", "url": "#", "description": "Replace this with your app link", "icon": "📡", "color": "#06b6d4" },
+  { "title": "Placeholder 8", "url": "#", "description": "Replace this with your app link", "icon": "🔍", "color": "#10b981" },
+  { "title": "Placeholder 9", "url": "#", "description": "Replace this with your app link", "icon": "🧭", "color": "#3b82f6" },
+  { "title": "Placeholder 10", "url": "#", "description": "Replace this with your app link", "icon": "📁", "color": "#ef4444" }
+]
