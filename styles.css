@@ -14,14 +14,13 @@
   color-scheme: dark light;
 }
 
-/* Theme: default dark unless [data-theme="light"] on html */
+/* Theme */
 html[data-theme="light"] {
   --bg: var(--bg-light);
   --card: var(--card-light);
   --muted: var(--muted-light);
   --text: var(--text-light);
   --card-border: rgba(2,6,23,0.04);
-  background-color: var(--bg-light);
 }
 html:not([data-theme="light"]) {
   --bg: var(--bg-dark);
@@ -29,7 +28,6 @@ html:not([data-theme="light"]) {
   --muted: var(--muted-dark);
   --text: var(--text-dark);
   --card-border: rgba(255,255,255,0.03);
-  background-color: var(--bg-dark);
 }
 
 *{box-sizing:border-box}
@@ -64,12 +62,6 @@ body{
 
 .result-count{font-size:0.85rem;color:var(--muted);margin-top:6px}
 
-.manage-link{
-  color:var(--accent);font-size:0.95rem;text-decoration:none;background:transparent;
-  padding:8px 12px;border-radius:10px;border:1px solid rgba(0,0,0,0.04)
-}
-.manage-link:hover{opacity:0.95}
-
 .theme-toggle{
   display:inline-flex;align-items:center;justify-content:center;gap:8px;
   padding:8px;border-radius:10px;border:1px solid var(--card-border);
@@ -83,6 +75,7 @@ body{
   gap:16px;margin-top:20px;
 }
 
+/* Card */
 .card{
   background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
   border-radius:var(--radius);
@@ -92,32 +85,58 @@ body{
   transition:transform .12s ease,box-shadow .12s ease,background-color .12s ease;
   background-color: var(--card);
   color:var(--text);
+  cursor:pointer; /* whole card clickable */
+  min-height:120px;
 }
 .card:focus-within, .card:hover{
   transform:translateY(-6px);
   box-shadow: 0 8px 30px rgba(2,6,23,0.6);
 }
-.card a{
-  color:inherit;text-decoration:none;display:block;
-}
-.card .top{display:flex;align-items:center;gap:12px}
+.card:focus{outline:3px solid rgba(45,212,191,0.08)}
+.card a{ color:inherit; text-decoration:none; }
+
+/* Top (icon + title/desc) */
+.card .top{display:flex;align-items:flex-start;gap:12px}
 .icon{
   width:52px;height:52px;border-radius:12px;display:flex;align-items:center;justify-content:center;
   font-size:22px;background:linear-gradient(135deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-  border:1px solid rgba(255,255,255,0.02)
+  border:1px solid rgba(255,255,255,0.02);
+  flex:0 0 52px;
 }
-.title{font-weight:600}
-.desc{color:var(--muted);font-size:0.95rem;margin-top:6px}
+.title{font-weight:600;margin:0 0 6px 0}
+.title-link{display:inline-block}
+.desc{color:var(--muted);font-size:0.95rem;margin-top:0;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
-.card a .meta{display:flex;justify-content:space-between;align-items:center;margin-top:10px}
+/* Meta row: fixed-size button + note */
+.meta{display:flex;align-items:center;justify-content:space-between;margin-top:auto;gap:12px}
+.right{display:flex;align-items:center;gap:10px}
+
+/* Fixed-size Open button */
 .open-btn{
-  background:transparent;border:1px solid rgba(255,255,255,0.05);padding:8px 10px;border-radius:10px;color:var(--accent);
-  cursor:pointer;text-decoration:none;font-weight:600;
+  display:inline-flex;align-items:center;justify-content:center;
+  width:96px; /* fixed width for consistency */
+  min-width:96px;
+  height:40px;
+  padding:8px 10px;border-radius:10px;
+  border:1px solid var(--card-border);
+  background:transparent;color:var(--accent);cursor:pointer;font-weight:600;text-decoration:none;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
 }
 .open-btn:focus{outline:3px solid rgba(45,212,191,0.08)}
 
-.site-footer{margin-top:36px;color:var(--muted);padding:18px 0;border-top:1px solid var(--card-border)}
+/* Note box next to button */
+.note{
+  background:rgba(0,0,0,0.06);
+  border-radius:8px;padding:8px 10px;font-size:0.85rem;color:var(--muted);
+  border:1px solid var(--card-border);
+  max-width:260px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
 
+/* Make keyboard focus visible on the card itself and ensure Enter opens */
+.card:focus{outline-offset:2px}
+
+/* Footer - kept minimal (removed "built for easy editing..." line) */
+.site-footer{margin-top:36px;color:var(--muted);padding:18px 0;border-top:1px solid var(--card-border)}
 .noscript{color:var(--muted)}
 
 .visually-hidden{
