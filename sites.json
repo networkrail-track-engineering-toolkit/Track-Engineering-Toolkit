@@ -1,11 +1,11 @@
 [
-  { "title": "Placeholder 1", "url": "#", "description": "Replace this with your app link", "icon": "🔧", "color": "#0ea5a4" },
-  { "title": "Placeholder 2", "url": "#", "description": "Replace this with your app link", "icon": "🧭", "color": "#60a5fa" },
-  { "title": "Placeholder 3", "url": "#", "description": "Replace this with your app link", "icon": "⚙️", "color": "#f59e0b" },
-  { "title": "Placeholder 4", "url": "#", "description": "Replace this with your app link", "icon": "📊", "color": "#ef4444" },
-  { "title": "Placeholder 5", "url": "#", "description": "Replace this with your app link", "icon": "🗂️", "color": "#7c3aed" },
-  { "title": "Placeholder 6", "url": "#", "description": "Replace this with your app link", "icon": "🧪", "color": "#14b8a6" },
-  { "title": "Placeholder 7", "url": "#", "description": "Replace this with your app link", "icon": "📡", "color": "#06b6d4" },
+  { "title": "Cab Ride App", "url": "#", "description": "https://app-cab-ride-app-web-dev-fmdhddffcshzb0ew.uksouth-01.azurewebsites.net", "icon": "🚆", "color": "#0ea5a4" },
+  { "title": "Amber Trolley Trace", "url": "#", "description": "https://kind-hill-009935203.7.azurestaticapps.net/", "icon": "📈", "color": "#60a5fa" },
+  { "title": "Track Geometry Engine", "url": "#", "description": "https://app-track-geometry-engine-web-dev-aecdhqdsa9fnhkbr.uksouth-01.azurewebsites.net/", "icon": "📉", "color": "#f59e0b" },
+  { "title": "CRT PowerBI", "url": "#", "description": "https://app.powerbi.com/groups/me/reports/3aa99f31-9fac-4ec4-9cd1-c6f42c229419/59c61bcc42918e4729c0?experience=power-bi", "icon": "☀️", "color": "#ef4444" },
+  { "title": "EC RAMP", "url": "#", "description": "https://apps.powerapps.com/play/e/default-c22cc3e1-5d7f-4f4d-be03-d5a158cc9409/a/01de02c3-157c-40ed-ae6f-b1f095bbb629?tenantId=c22cc3e1-5d7f-4f4d-be03-d5a158cc9409&source=AppSharedV3&hint=22b0e3de-0595-41fa-9d65-fd8322bc5428&sourcetime=1760004193106", "icon": "🗂️", "color": "#7c3aed" },
+  { "title": "EC OTM Plan", "url": "#", "description": "https://apps.powerapps.com/play/e/default-c22cc3e1-5d7f-4f4d-be03-d5a158cc9409/a/c042bc88-d0c0-4113-acee-a0c46b208f8d?tenantId=c22cc3e1-5d7f-4f4d-be03-d5a158cc9409&sourcetime=1745934168155&source=portal#", "icon": "🧪", "color": "#14b8a6" },
+  { "title": "Doncaster OTM", "url": "#", "description": "https://networkrail.sharepoint.com/sites/DoncasterTechnicalHub/ATME%20FOLDER/Forms/AllItems.aspx?id=%2Fsites%2FDoncasterTechnicalHub%2FATME%20FOLDER%2FOTM%2FOTM%20PLAN&viewid=de23589a%2Dd4e7%2D46ec%2D9d28%2D06e98d7c0c58", "icon": "📡", "color": "#06b6d4" },
   { "title": "Placeholder 8", "url": "#", "description": "Replace this with your app link", "icon": "🔍", "color": "#10b981" },
   { "title": "Placeholder 9", "url": "#", "description": "Replace this with your app link", "icon": "🧭", "color": "#3b82f6" },
   { "title": "Placeholder 10", "url": "#", "description": "Replace this with your app link", "icon": "📁", "color": "#ef4444" }
