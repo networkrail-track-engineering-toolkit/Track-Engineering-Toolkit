@@ -120,6 +120,14 @@
     "note": "AIVR"
   },
   {
+    "title": "Maintenance Registers",
+    "url": "http://oae2.hiav.networkrail.co.uk/ords/f?p=1505:2:116849513092271:::::",
+    "description": "Maintenance Register",
+    "icon": "🚄",
+    "color": "#1a9e00",
+    "note": "Placeholder"
+  },
+  {
     "title": "Placeholder",
     "url": "#",
     "description": "Replace this with your app link",
