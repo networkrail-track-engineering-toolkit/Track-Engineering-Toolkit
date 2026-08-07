@@ -4,7 +4,7 @@
     "url": "https://app-cab-ride-app-web-dev-fmdhddffcshzb0ew.uksouth-01.azurewebsites.net",
     "description": "Track Geometry fault reporting with locational data",
     "icon": "🚆",
-    "color": "#0ea5a4",
+    "color": "#e11d48",
     "note": "Azure Web App"
   },
   {
@@ -12,7 +12,7 @@
     "url": "https://kind-hill-009935203.7.azurestaticapps.net/",
     "description": "Turns raw data to graph",
     "icon": "📈",
-    "color": "#60a5fa",
+    "color": "#06b6d4",
     "note": "Azure Static Web App"
   },
   {
@@ -28,7 +28,7 @@
     "url": "https://app.powerbi.com/groups/me/reports/3aa99f31-9fac-4ec4-9cd1-c6f42c229419/59c61bcc42918e4729c0?experience=power-bi",
     "description": "CRT Power BI report for Doncaster",
     "icon": "☀️",
-    "color": "#ef4444",
+    "color": "#10b981",
     "note": "Power BI"
   },
   {
@@ -36,23 +36,23 @@
     "url": "https://apps.powerapps.com/play/e/default-c22cc3e1-5d7f-4f4d-be03-d5a158cc9409/a/01de02c3-157c-40ed-ae6f-b1f095bbb629?tenantId=c22cc3e1-5d7f-4f4d-be03-d5a158cc9409&source=AppSharedV3&hint=22b0e3de-0595-41fa-9d65-fd8322bc5428&sourcetime=1760004193106",
     "description": "East Coast RAMP",
     "icon": "🗂️",
-    "color": "#7c3aed",
+    "color": "#6366f1",
     "note": "Power Apps"
   },
   {
     "title": "EC OTM Plan",
     "url": "https://apps.powerapps.com/play/e/default-c22cc3e1-5d7f-4f4d-be03-d5a158cc9409/a/c042bc88-d0c0-4113-acee-a0c46b208f8d?tenantId=c22cc3e1-5d7f-4f4d-be03-d5a158cc9409&sourcetime=1745934168155&source=portal#",
     "description": "OTM plans for East Coast",
-    "icon": "🧪",
-    "color": "#14b8a6",
+    "icon": "📝",
+    "color": "#ef4444",
     "note": "Power Apps"
   },
   {
     "title": "Doncaster OTM",
     "url": "https://networkrail.sharepoint.com/sites/DoncasterTechnicalHub/ATME%20FOLDER/Forms/AllItems.aspx?id=%2Fsites%2FDoncasterTechnicalHub%2FATME%20FOLDER%2FOTM%2FOTM%20PLAN&viewid=de23589a%2Dd4e7%2D46ec%2D9d28%2D06e98d7c0c58",
     "description": "OTM Plans for Doncaster",
-    "icon": "📡",
-    "color": "#06b6d4",
+    "icon": "📅",
+    "color": "#0ea5a4",
     "note": "SharePoint"
   },
   {
@@ -60,63 +60,63 @@
     "url": "http://oae2.hiav.networkrail.co.uk/ords/APEXP_PAPEX2/f?p=900:1:107360660404449:::::",
     "description": "Track Geometry Fault",
     "icon": "🔍",
-    "color": "#10b981",
+    "color": "#60a5fa",
     "note": "Website"
   },
   {
     "title": "INSIGHT",
     "url": "https://iidst.networkrail.co.uk/home",
     "description": "Insight",
-    "icon": "🧭",
-    "color": "#3b82f6",
+    "icon": "💡",
+    "color": "#7c3aed",
     "note": "Website"
   },
   {
     "title": "EC Track WSF",
     "url": "https://app.powerbi.com/groups/488d0fc8-a7b4-410a-b041-aa3e806dd89d/reports/1e62d3aa-089a-41c1-bbfb-c7334bf3db42/81e003fac7e91482c392?experience=power-bi",
     "description": "Wrong Side Failures",
-    "icon": "📁",
-    "color": "#ef4444",
+    "icon": "❌",
+    "color": "#a78bfa",
     "note": "PowerBI"
   },
   {
     "title": "Weak Embankment",
     "url": "https://app.powerbi.com/groups/me/reports/0626162e-8fbd-461f-a426-dc84e05f7a1f/ReportSection?ctid=c22cc3e1-5d7f-4f4d-be03-d5a158cc9409&experience=power-bi",
     "description": "Weak Embankment SMD & TQ",
-    "icon": "📁",
-    "color": "#ef4444",
+    "icon": "⛰️",
+    "color": "#f97316",
     "note": "PowerBI"
   },
   {
     "title": "Possession Planning",
     "url": "https://networkrail.sharepoint.com/sites/DoncasterInfrastructureMaintenanceServicesPossessionPlanning/Shared%20Documents/Forms/AllItems.aspx?e=5%3A8cf3509d435d4a4fb62b87a24a27b2cd&sharingv2=true&fromShare=true&at=9&CID=452b18e8%2D02a1%2D4b26%2D971e%2Dc9f643e3f027&FolderCTID=0x012000B9D09B5E71646C46BC2D2AFDB20EC211&id=%2Fsites%2FDoncasterInfrastructureMaintenanceServicesPossessionPlanning%2FShared%20Documents%2FGeneral",
     "description": "Doncaster Infrastructure Maintenance Services",
-    "icon": "📁",
-    "color": "#ef4444",
+    "icon": "📙",
+    "color": "#84cc16",
     "note": "SharePoint"
   },
   {
     "title": "RailHub",
     "url": "https://p4d-prod.on-trac.co.uk/pages/home",
     "description": "RailHub SWP",
-    "icon": "📁",
-    "color": "#ef4444",
+    "icon": "🦺",
+    "color": "#fb7185",
     "note": "Website"
   },
   {
     "title": "AIVR",
     "url": "https://view.aivr.video/login",
     "description": "AIVR",
-    "icon": "📁",
-    "color": "#ef4444",
+    "icon": "📷",
+    "color": "#8b5cf6",
     "note": "AIVR"
   },
   {
     "title": "Intel AIVR",
     "url": "https://intel.aivr.video/dashboard",
     "description": "Intel AIVR",
-    "icon": "📁",
-    "color": "#ef4444",
+    "icon": "💻",
+    "color": "#facc15",
     "note": "AIVR"
   },
   {
@@ -124,23 +124,7 @@
     "url": "#",
     "description": "Replace this with your app link",
     "icon": "📁",
-    "color": "#ef4444",
-    "note": "Placeholder"
-  },
-  {
-    "title": "Placeholder",
-    "url": "#",
-    "description": "Replace this with your app link",
-    "icon": "📁",
-    "color": "#ef4444",
-    "note": "Placeholder"
-  },
-  {
-    "title": "Placeholder",
-    "url": "#",
-    "description": "Replace this with your app link",
-    "icon": "📁",
-    "color": "#ef4444",
+    "color": "#f43f5e",
     "note": "Placeholder"
   }
 ]
