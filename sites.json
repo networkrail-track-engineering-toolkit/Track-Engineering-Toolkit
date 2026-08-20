@@ -160,6 +160,14 @@
     "note": "PowerBI"
   },
   {
+    "title": "Vertical Acceleration",
+    "url": "https://app.powerbi.com/groups/me/reports/011296d0-9109-4a8a-8785-9a4a729748cd/c45651ed451b1fb29ae0?experience=power-bi",
+    "description": "High acceleration PowerBI",
+    "icon": "↕",
+    "color": "#115f4f",
+    "note": "PowerBI"
+  },
+  {
     "title": "Placeholder",
     "url": "#",
     "description": "Replace this with your app link",
