@@ -125,7 +125,39 @@
     "description": "Maintenance Register",
     "icon": "🚄",
     "color": "#1a9e00",
-    "note": "Placeholder"
+    "note": "Website"
+  },
+  {
+    "title": "Standards",
+    "url": "https://standards.networkrail.co.uk/",
+    "description": "Standards Register",
+    "icon": "📄",
+    "color": "#b121be",
+    "note": "Website"
+  },
+  {
+    "title": "Rave",
+    "url": "https://auth.ensyte.net/auth/realms/rave/protocol/openid-connect/auth?client_id=autoval-ui&redirect_uri=https%3A%2F%2Frave-hitachi.omnicombalfourbeatty.com%2Fshifts&state=5ecb216f-9d0b-40d8-8c16-59c08cd10263&response_mode=fragment&response_type=code&scope=openid&nonce=c148a058-b52e-41d4-9579-5f06bf4f21a5",
+    "description": "Rave",
+    "icon": "🚇",
+    "color": "#b00934",
+    "note": "Website"
+  },
+  {
+    "title": "ODM North Publication",
+    "url": "https://networkrail.sharepoint.com/sites/ODMNorthPublications",
+    "description": "ODM North Publications",
+    "icon": "✅",
+    "color": "#f55dfe",
+    "note": "Sharepoint"
+  },
+  {
+    "title": "Rough Rides PowerBI",
+    "url": "https://app.powerbi.com/groups/488d0fc8-a7b4-410a-b041-aa3e806dd89d/reports/8dc21d34-f104-432b-ad7e-c141e42bc84b/ReportSection?experience=power-bi",
+    "description": "Rough Rides PowerBI",
+    "icon": "⚠️",
+    "color": "#0646a4",
+    "note": "PowerBI"
   },
   {
     "title": "Placeholder",
