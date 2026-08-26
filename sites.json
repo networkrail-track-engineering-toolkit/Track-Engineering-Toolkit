@@ -24,6 +24,14 @@
     "note": "Azure Web App"
   },
   {
+    "title": "Trace on Trace",
+    "url": "https://app-trace-on-trace-web-dev-hnfcapatg7cbfnac.uksouth-01.azurewebsites.net/",
+    "description": "Trace on Trace",
+    "icon": "📁📁",
+    "color": "#f43f5e",
+    "note": "Placeholder"
+  },
+  {
     "title": "CRT PowerBI",
     "url": "https://app.powerbi.com/groups/me/reports/3aa99f31-9fac-4ec4-9cd1-c6f42c229419/59c61bcc42918e4729c0?experience=power-bi",
     "description": "CRT Power BI report for Doncaster",
