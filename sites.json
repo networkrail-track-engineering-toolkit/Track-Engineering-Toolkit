@@ -20,15 +20,23 @@
     "url": "https://app-track-geometry-engine-web-dev-aecdhqdsa9fnhkbr.uksouth-01.azurewebsites.net/",
     "description": "Trace Review App (Under Development)",
     "icon": "📉",
-    "color": "#f59e0b",
+    "color": "#f89e0b",
     "note": "Azure Web App"
   },
   {
-    "title": "Trace on Trace",
+    "title": "Track Geometry Recorder",
+    "url": "https://app-track-geometry-recorder-web-dev-fxdefqfmbecbh3er.uksouth-01.azurewebsites.net/",
+    "description": "Track Geometry Recorder",
+    "icon": "📼",
+    "color": "#f43f5e",
+    "note": "Placeholder"
+  },
+  {
+    "title": "📊",
     "url": "https://app-trace-on-trace-web-dev-hnfcapatg7cbfnac.uksouth-01.azurewebsites.net/",
     "description": "Trace on Trace",
     "icon": "📁📁",
-    "color": "#f43f5e",
+    "color": "#f59f5e",
     "note": "Placeholder"
   },
   {
