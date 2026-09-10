@@ -29,7 +29,7 @@
     "description": "Track Geometry Recorder",
     "icon": "📼",
     "color": "#f43f5e",
-    "note": "Placeholder"
+    "note": "Azure Web App"
   },
   {
     "title": "Trace On Trace",
@@ -37,7 +37,15 @@
     "description": "Trace on Trace",
     "icon": "📊",
     "color": "#f59f5e",
-    "note": "Placeholder"
+    "note": "Azure Web App"
+  },
+  {
+    "title": "TRACK QUALITY PACK",
+    "url": "https://app-track-quality-pack-web-dev-d4bvdsbtfddbdrah.uksouth-01.azurewebsites.net/",
+    "description": "TRACK QUALITY PACK",
+    "icon": "📦",
+    "color": "#f47b3f",
+    "note": "Azure Web App"
   },
   {
     "title": "CRT PowerBI",
