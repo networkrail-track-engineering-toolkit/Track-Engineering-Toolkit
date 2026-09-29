@@ -72,6 +72,14 @@
     "note": "Power BI"
   },
   {
+    "title": "Cyclic Top PowerBI",
+    "url": "https://app.powerbi.com/groups/fdd28798-3019-485c-aa0a-83305d7d1a27/reports/56cc1f1d-caa3-4c8e-90d8-5f8b1914b167/5a81b02211e8b66687a7?experience=power-bi",
+    "description": "Cyclic Top Monitoring",
+    "icon": "🌊",
+    "color": "#53374c",
+    "note": "Power BI"
+  },
+  {
     "title": "EC RAMP",
     "url": "https://apps.powerapps.com/play/e/default-c22cc3e1-5d7f-4f4d-be03-d5a158cc9409/a/01de02c3-157c-40ed-ae6f-b1f095bbb629?tenantId=c22cc3e1-5d7f-4f4d-be03-d5a158cc9409&source=AppSharedV3&hint=22b0e3de-0595-41fa-9d65-fd8322bc5428&sourcetime=1760004193106",
     "description": "East Coast RAMP",
